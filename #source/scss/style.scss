@@ -1,0 +1,8 @@
+// Обнуление стилей
+@import "nullstyle.scss";
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//SCSS
+body{
+    font-family: 'Roboto', sans-serif;
+}
