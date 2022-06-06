@@ -80,7 +80,7 @@ function urlCreator(domain){
 const com = urlCreator('com');
 
 console.log(com('youtube'))
---------*/
+
 
 function logPerson() {
     console.log(`Person: ${this.name}, ${this.age}, ${this.job}`)
@@ -117,3 +117,13 @@ bind(personTwo, logPerson)();
 
 // bind(personOne, logPerson);
 // bind(personTwo, logPerson);
+
+--------*/
+
+console.log('Start 1');
+
+console.log('Start 2');
+
+setTimeout(function () {
+    console.log('Start 3')
+}, 0)
