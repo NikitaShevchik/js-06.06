@@ -24,6 +24,24 @@ const lena = {
     age: 15
 }
 
-const fnLenaInfoLog = person.logInfo.bind(lena);
-fnLenaInfoLog('Frontend', 'IPhone')
-person.logInfo('Dealer', 'Android')
+// person.logInfo.bind(lena, 'Frontend', 'IPhone')();
+// person.logInfo.call(lena, 'Frontend', 'IPhone');
+// person.logInfo.apply(lena, ['Frontend', 'IPhone']);
+
+const array = [1, 2, 3, 4, 5];
+
+// function multBy(arr, n){
+//     return arr.map(function(i) {
+//         return i * n;
+//     })
+// }
+
+Array.prototype.multBy = function (n) {
+    return this.map(function (i) {
+        return i * n;
+    })
+}
+
+// console.log(array.multBy(6));
+
+
